@@ -1,0 +1,85 @@
+body {
+    font-family: 'Orbitron', sans-serif; /* Fuente cyberpunk, descárgala o usa Google Fonts */
+    background: #0d0d1a; /* Fondo oscuro azulado */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ff00ff; /* Neón magenta */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff; /* Brillo neón */
+    font-size: 2.5em;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    width: fit-content;
+    margin: 30px auto;
+    background: #1a1a2e; /* Fondo oscuro para el tablero */
+    padding: 10px;
+    border: 2px solid #00ffff; /* Borde cian neón */
+    box-shadow: 0 0 15px #00ffff;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: #0f0f23; /* Fondo de celdas */
+    border: 2px solid #ff00ff; /* Borde magenta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    color: #00ffff; /* Texto cian */
+    text-shadow: 0 0 5px #00ffff;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .cell:hover {
+    background: #2a2a4e; /* Cambio al pasar el ratón */
+    box-shadow: 0 0 10px #ff00ff; /* Brillo neón */
+  }
+  
+  #status {
+    font-size: 1.5em;
+    color: #00ffcc; /* Verde-cian neón */
+    text-shadow: 0 0 5px #00ffcc;
+    margin: 20px 0;
+  }
+  
+  #reset {
+    padding: 10px 25px;
+    font-size: 1.2em;
+    background: #ff00ff; /* Botón magenta */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 10px #ff00ff;
+    transition: all 0.3s;
+  }
+  
+  #reset:hover {
+    background: #00ffff; /* Cambio a cian */
+    color: #0d0d1a;
+    box-shadow: 0 0 15px #00ffff;
+  }
+
+
+  /* Animación de parpadeo */
+@keyframes flicker {
+    0% { opacity: 1; box-shadow: 0 0 10px #ff00ff; }
+    25% { opacity: 0.6; box-shadow: 0 0 5px #ff00ff; }
+    50% { opacity: 1; box-shadow: 0 0 15px #00ffff; }
+    75% { opacity: 0.6; box-shadow: 0 0 5px #00ffff; }
+    100% { opacity: 1; box-shadow: 0 0 10px #ff00ff; }
+  }
+  .winner {
+    animation: flicker 1s infinite;
+  }
