@@ -1,19 +1,18 @@
 # Tic Tac Toe
 **[URL](#):** [https://project-6-tic-toc-toe.netlify.app/](https://project-6-tic-toc-toe.netlify.app/)
 
-## Descripción
-Tic Tac Toe es una implementación digital del clásico juego de tres en raya. Diseñado para ser simple y divertido, permite a los usuarios jugar contra otro jugador o, posiblemente, contra una IA básica.
+## Description
+Tic Tac Toe is a digital implementation of the classic three-in-a-row game. Designed to be simple and fun, it allows users to play against another player or potentially against a basic AI.
 
-## Características
-- Tablero interactivo de 3x3.
-- Indicador de turnos y ganador.
-- Diseño minimalista y responsivo.
+## Features
+- Interactive 3x3 game board.
+- Turn and winner indicators.
+- Minimalist and responsive design.
 
-## Tecnologías utilizadas (estimadas)
+## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript.
-- **Lógica del juego:** JavaScript puro.
-- **Despliegue:** Netlify.
+- **Deployment:** Netlify.
 
-## Instalación y uso
-1. Visita: [https://project-6-tic-toc-toe.netlify.app/](https://project-6-tic-toc-toe.netlify.app/).
-2. Juega haciendo clic en las casillas del tablero.
+## Installation and Usage
+1. Visit: [https://project-6-tic-toc-toe.netlify.app/](https://project-6-tic-toc-toe.netlify.app/).
+2. Play by clicking on the board’s squares.
